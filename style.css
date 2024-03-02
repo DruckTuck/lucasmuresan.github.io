@@ -23,12 +23,26 @@
 }
 
 body{
-  background-color: #050308;
   margin: 0;
   padding: 0;
   font-size: 100%;
   line-height: 1.5;
   font-family: sans-serif;
+}
+
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #050308;
+}
+
+.content {
+  padding: 50px;
+  background-color: #0D0B10;
 }
 
 *::-webkit-scrollbar {
@@ -41,62 +55,70 @@ html {
 
 
 .header {
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 150%;
+  font-size: 1.5rem;
 }
 
 .header-name {
-  margin-top: 1em;
   line-height: 1.25;
   color: #F0D6B7;
+  margin-bottom: 1.25em;
 }
 
 .header-title {
-  font-size: 100%;
+  font-size: 1.2em;
   color: #604520;
-  margin-top: 2em;
   line-height: 1.25;
 }
 
 .header-icons {
-  margin-bottom: 1em;
-  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em 0;
 }
 
-.header-links {
+.header-tags {
+  padding-top: 2rem;
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: .5em;
 }
 
-.ui, .ux, .figma, .html-css {
+
+.tags {
   display: flex;
   justify-content: center;
-  background-color: #df8d3b;
-  color: #050308;
+  background-color: #1f1e1d;
+  color: #F0D6B7;
   padding: 1ex;
   border-radius: 1rex;
 }
 
-.down{
-  display: flex;
+.viewp {
+  margin: 0 auto;
+  margin-top: 20px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4.5em;
-  margin-bottom: 5.8%;
-  width: 0%;
-  font-size: 32px;
-  color: #F5EADE;
+  display: inline-block;
+  padding: 12px 25px;
+  border: 2px #df8d3b;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #df8d3b;
+  color: #050308;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+.viewp:hover {
+  background-color: #f0d6b7;
+  box-shadow: 0 0 5px #f0d6b7;
+  transform: scale(1.1);
 }
 
 .about {
-  background-color: #0D0B10;
   padding-top: 20px;
   margin: auto;
   width: 100%;
@@ -194,7 +216,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   margin: auto;
   height: .1em;
   border-color: #90582C;
@@ -206,14 +228,35 @@ a {
   color: #F5EADE;
 }
 
-.iconoir-mail, .iconoir-linkedin, .iconoir-github, .iconoir-dribbble {
-  font-size: 30px;
+.resume {
+  font-weight: bold;
+  color: #050308;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 10px;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  background-color: #df8d3b;
+  border-radius: 7px;
+  transition: 0.5s ease-in-out;
+}
+
+.resume:hover {
+  box-shadow: 0 0 10px #df8d3b;
+  transform: scale(1.1);
+}
+
+.iconoir-mail, .iconoir-linkedin, .iconoir-github, .iconoir-dribbble {
+  font-size: 30px;
+  padding: 10px 15px 10px 15px;
+  margin: 20px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-brands, .fa-artstation {
+  font-size: 30px;
+  padding: 10px 15px 10px 15px;
+  margin: 20px 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .iconoir-mail {
@@ -226,6 +269,8 @@ a {
   color: #050308;
   background-color: #F44336;
   border-radius: 20px;
+  box-shadow: 0 0 10px #F44336;
+  transform: scale(1.2);
 }
 
 .iconoir-linkedin {
@@ -237,6 +282,8 @@ a {
   color: #050308;
   background-color: #0394e2;
   border-radius: 20px;
+  box-shadow: 0 0 10px #0394e2;
+  transform: scale(1.2);
 }
 
 .iconoir-dribbble {
@@ -248,31 +295,50 @@ a {
   color: #050308;
   background-color: #ea4c89;
   border-radius: 20px;
+  box-shadow: 0 0 10px #ea4c89;
+  transform: scale(1.2);
+}
+
+.iconoir-github {
+  color: #CEC4BB;
+  background-color: #050308;
 }
 
 .iconoir-github:hover {
   color: #050308;
   background-color: #F5EADE;
   border-radius: 20px;
+  box-shadow: 0 0 10px #F5EADE;
+  transform: scale(1.2);
+}
+
+.fa-artstation {
+  color: rgb(19, 175, 240);
+  background-color: #050308;
+}
+
+.fa-artstation:hover {
+  color: #050308;
+  background-color: rgb(19, 175, 240);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(19, 175, 240);
+  transform: scale(1.2);
 }
 
 .description {
-  padding-top: 2em;
-  font-size: .8em;
+  font-size: .7em;
   color: #f5eade;
 }
 
-/* .link {
-  padding-left: 15px;
-} */
-
 nav {
-  padding: 20px 148px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  font-weight: 600;
-  overflow: hidden;
+  align-items: center;
+  padding: 20px 148px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 nav .logo{
@@ -326,26 +392,33 @@ nav .nav-link{
     overflow: hidden;
     background-color: transparent;
     border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
   }
   
   .card__img {
-    width: 328px;
-    border-radius: 1.5rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: inherit;
+    filter: brightness(1);
+    transition: filter 0.5s ease-in-out;
   }
     
   .card__data {
-    width: 280px;
-    background-color: var(--container-color);
-    padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
-    border-radius: 1rem;
     position: absolute;
-    bottom: -9rem;
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    margin-inline: auto;
+    padding: 1.5rem 2rem;
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
-    transition: opacity 1s 1s;
+    transition: opacity 0.5s ease-in-out;
   }
   
   .card__description {
@@ -369,26 +442,17 @@ nav .nav-link{
     color: #F44336;
   }
   
-  .card__button:hover {
-    text-decoration: underline;
-  }
    /* Naming animations in hover */
+  .card__article:hover .card__img {
+    filter: brightness(0.3);
+  }
+
    .card__article:hover .card__data {
-    animation: show-data 1s forwards;
     opacity: 1;
-    transition: opacity .3s;
   }
   
   .card__article:hover {
-    animation: remove-overflow 2s forwards;
-  }
-  
-  .card__article:not(:hover) {
-    animation: show-overflow 2s forwards;
-  }
-  
-  .card__article:not(:hover) .card__data {
-    animation: remove-data 1s forwards;
+    transform: scale(1.02);
   }
   
   /* Card animation */

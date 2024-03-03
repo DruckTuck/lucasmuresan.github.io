@@ -136,14 +136,6 @@ html {
   padding-bottom: 20px;
 }
 
-.line-about {
-  margin-left: 17em;
-  width: 25%;
-  height: 0.1em;
-  border-width: .3rex;
-  border-color: #57A2C8;  
-}
-
 h6 {
   font-size: 11px;
 }
@@ -336,9 +328,11 @@ nav {
   align-items: center;
   padding: 20px 148px;
   position: fixed;
+  background-color: #050308;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 nav .logo{
@@ -366,6 +360,13 @@ nav .nav-link{
   display: flex;
   gap: 16px;
   color: #F5EADE;
+}
+
+.rightedge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5em;
 }
 
 .card_img {
@@ -440,6 +441,9 @@ nav .nav-link{
     font-size: var(--small-font-size);
     font-weight: 500;
     color: #F44336;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #050308;
   }
   
    /* Naming animations in hover */
@@ -452,7 +456,7 @@ nav .nav-link{
   }
   
   .card__article:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
   }
   
   /* Card animation */

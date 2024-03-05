@@ -102,7 +102,7 @@ html {
   display: inline-block;
   padding: 12px 25px;
   border: 2px #df8d3b;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
   background-color: #df8d3b;
   color: #050308;
@@ -196,9 +196,8 @@ p {
 
 .footertext {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 40em;
   color: #E5DCD0;
   margin-top: 1em;
   padding-bottom: 3em;
@@ -225,7 +224,7 @@ a {
   color: #050308;
   padding: 12px 25px;
   background-color: #df8d3b;
-  border-radius: 7px;
+  border-radius: 50px;
   transition: 0.5s ease-in-out;
 }
 
@@ -426,7 +425,8 @@ nav .nav-link{
     font-size: var(--h2-font-size);
     font-weight: 500;
     color: var(--title-color);
-    margin-bottom: .75rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
   
   .card__button {

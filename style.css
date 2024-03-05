@@ -131,7 +131,7 @@ html {
   justify-content: flex-start;
   margin-left: 6em;
   margin-top: 1em;
-  font-size: 46px;
+  font-size: 3.25rem;
   color: #F0D6B7;
   padding-bottom: 20px;
 }
@@ -285,7 +285,6 @@ a {
 
 .iconoir-github {
   color: #CEC4BB;
-  background-color: #050308;
 }
 
 .iconoir-github:hover {

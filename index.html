@@ -103,13 +103,13 @@
 
   let opacity = 0; // Starting opacity
   const interval = setInterval(function() {
-    opacity += 0.013; // Increase opacity by 5% per interval
+    opacity += 0.01; // Increase opacity by 5% per interval
     header.style.opacity = opacity;
 
     if (opacity >= 1) {
       clearInterval(interval); // Stop the loop when fully visible
     }
-  }, 28); // Time interval between opacity changes (in milliseconds)
+  }, 30); // Time interval between opacity changes (in milliseconds)
 });
 </script>
   <script>// Some random colors

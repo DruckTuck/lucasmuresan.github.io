@@ -1,158 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"/>  
-  <script src="https://kit.fontawesome.com/4cbc663bfd.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="assets/Logo.png">
-  <title>Lucas</title>
-</head>
-<body>
-  
-<div class="landing">
-  <nav>
-    <div class="logo">
-      <img src="assets/Logo.png" alt="personal logo">
-    </div>
-    <div class="rightedge">
-    <div class="aboutpage">
-      <!-- <a href="about.html">About</a> -->
-    </div>
-    <div class="nav-link">
-      <a href="assets/cv.pdf" target="_blank" class="resume">Résumé</a>
-    </div>
-  </div>
-  </nav>
-  <div class="header" id="myHeader">
-    <h1 class="header-name">Lucas Mureșan</h1>
-    <h1 class="header-title"><i>UI & UX Generalist Designer</i></h1>
-    <div class="header-tags">
-      <div class="tags"><h6>UI</h6></div>
-      <div class="tags"><h6>UX</h6></div>
-      <div class="tags"><h6>Figma</h6></div>
-      <div class="tags"><h6>HTML</h6></div>
-      <div class="tags"><h6>CSS</h6></div>
-    </div>
-    <div class="header-icons">
-      <a aria-label="Send email" href="mailto: lukemuresan@gmail.com" class="envelope"><i class="iconoir-mail"></i></a>
-      <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/muresan-lucas20/"><i class="iconoir-linkedin"></i></a>
-      <a aria-label="My Dribbble" target="_blank" href="https://dribbble.com/lucasdesigns4you"><i class="iconoir-dribbble"></i></a>
-      <a aria-label="My Github" target="_blank" href="https://github.com/DruckTuck"><i class="iconoir-github"></i></a>
-      <a aria-label="My Arstation" target="_blank" href="https://www.artstation.com/laihus"><i class="fa-brands fa-artstation"></i></a>
-    </div>
-    <div class="description"><p><i>3D Modeler & Piano Beginner</i></p> Slowly and steadily becoming a human swiss army knife</p></div>
-     <a class="viewp" href="#about" data-scroll>View Projects</a>
-  </div>
-</div>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56279362-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<div class="content">
-
-  <div class="about" id="about">
-    <h2 class="projects">Projects</h2>
-  </div-body>
-
-  <div class="container">
-    <div class="card__container">
-       <article class="card__article">
-          <img src="assets/img/Portfolio Cover Clamor.png" alt="Clamor Project" class="card__img">
-
-          <div class="card__data">
-             <span class="card__description"><b>Lead UI/UX Designer</b><br>Browser Extension</span>
-             <h2 class="card__title">Clamor</h2>
-             <a href="https://www.behance.net/gallery/192544041/Clamor-Web-Browser-Extension-Case-Study" target="_blank" class="card__button">Read More</a>
-          </div>
-       </article>
-
-       <!-- <article class="card__article">
-          <img src="assets/img/7card_wellbeing_illustrations-1024x1024.webp" alt="7card Project" class="card__img">
-
-          <div class="card__data">
-             <span class="card__description"><b>UX Research</b><br>Fitness, spa & relax app</span>
-             <h2 class="card__title">7card</h2>
-             <a href="#" class="card__button">Read More</a>
-          </div>
-       </article> -->
-
-       <article class="card__article">
-          <img src="assets/img/Shipment Trackers Redesign Cover.png" alt="Landing Page Redesign" class="card__img">
-
-          <div class="card__data">
-             <span class="card__description"><b>UI/UX Designer</b><br>Landing Page Redesign</span>
-             <h2 class="card__title">Shipment Trackers Inc</h2>
-             <a href="https://www.behance.net/gallery/193063751/Shipment-Trackers-Inc-Landing-Page-Redesign" target="_blank" class="card__button">Read More</a>
-          </div>
-       </article>
-    </div>
- </div>
-  <div class="footer">
-    <hr class="line-footer">
-    <div class="footertext">
-      <h5>built with coffee</h5>
-      <h5>still a work in progress</h5>
-      <h5>feel free to contact me</h5>
-    </div>
-  </div>
-
-
-</div>
-<script>window.addEventListener("load", function() {
-  const header = document.getElementById("myHeader");
-  header.style.opacity = 0; // Initially hidden
-
-  let opacity = 0; // Starting opacity
-  const interval = setInterval(function() {
-    opacity += 0.01; // Increase opacity by 5% per interval
-    header.style.opacity = opacity;
-
-    if (opacity >= 1) {
-      clearInterval(interval); // Stop the loop when fully visible
-    }
-  }, 20); // Time interval between opacity changes (in milliseconds)
-});
-</script>
-  <script>// Some random colors
-    const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
-    
-    const numBalls = 30;
-    const balls = [];
-    
-    for (let i = 0; i < numBalls; i++) {
-      let ball = document.createElement("div");
-      ball.classList.add("ball");
-      ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-      ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
-      ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
-      ball.style.transform = `scale(${Math.random()})`;
-      ball.style.width = `${Math.random()}em`;
-      ball.style.height = ball.style.width;
-      
-      balls.push(ball);
-      document.body.append(ball);
-    }
-    
-    // Keyframes
-    balls.forEach((el, i, ra) => {
-      let to = {
-        x: Math.random() * (i % 2 === 0 ? -11 : 11),
-        y: Math.random() * 12
-      };
-    
-      let anim = el.animate(
-        [
-          { transform: "translate(0, 0)" },
-          { transform: `translate(${to.x}rem, ${to.y}rem)` }
-        ],
-        {
-          duration: (Math.random() + 1) * 2000, // random duration
-          direction: "alternate",
-          fill: "both",
-          iterations: Infinity,
-          easing: "ease-in-out"
-        }
-      );
-    });
+      gtag('config', 'UA-56279362-7');
     </script>
+
+    <title>M. Lucas - UI/UX Designer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
+    <meta name="description" content="Andrei Josan - UI/UX Designer and Front-end Developer. Portfolio and Resume." />
+    <meta charset="UTF-8" />    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/fav/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"/>  
+    <script src="https://kit.fontawesome.com/4cbc663bfd.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="/assets/img/fav/site.webmanifest">
+    <link rel="shortcut icon" href="/assets//img/fav/favicon.ico">
+    <meta name="msapplication-TileColor" content="#eeeeee">
+    <meta name="msapplication-config" content="/assets/img/fav/browserconfig.xml">
+    <meta name="theme-color" content="#0000ff">
+    
+    <meta property="og:title" content="Works | Andrei Josan - UI/UX Designer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/assets/img/share.png" />
+  </head>
+
+  <body id="body">
+    <header class="site-header">
+  <a href="/resume/" class="top-link">Resume</a>
+</header>
+<section class="hero">
+  <div class="narrow">
+    
+    <h2 class="reveal-text">Mureșan Lucas</h2><br>
+    <p class="reveal-text reveal-delayed">UI/UX Generalist Designer, 3D Modeler and Piano Student.<br>Slowly and steadily becoming a human swiss army knife.</p>
+    
+    <ul class="skills reveal-text">
+      <li>UI</li>
+      <li>UX</li>
+      <li>Figma</li>      
+      <li>Illustrator</li>
+      <li>HTML & CSS</li>
+    </ul>
+  </div>
+  <div class="header-icons reveal-text">
+    <a aria-label="Send email" href="mailto: lukemuresan@gmail.com" class="envelope"><i class="iconoir-mail"></i></a>
+    <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/muresan-lucas20/"><i class="iconoir-linkedin"></i></a>
+    <a aria-label="My Dribbble" target="_blank" href="https://dribbble.com/lucasdesigns4you"><i class="iconoir-dribbble"></i></a>
+    <a aria-label="My Github" target="_blank" href="https://github.com/DruckTuck"><i class="iconoir-github"></i></a>
+    <a aria-label="My Arstation" target="_blank" href="https://www.artstation.com/laihus"><i class="fa-brands fa-artstation"></i></a>
+  </div>
+</section>
+
+
+<section class="works fade-in">
+  <div class="wide">
+    <div class="row">
+      
+
+      <div class="half">
+        
+<a href="https://www.behance.net/gallery/192544041/Clamor-Web-Browser-Extension-Case-Study" target="_blank" class="item-wrapper" rel="noreferrer">
+  <div class="image-holder">
+    <img src="/assets/Projects/Portfolio Cover.svg" alt="Web Clamor-Web-Browser-Extension-Case-Study" />
+  </div>
+  
+  <h3>Clamor, Web Browser Extension</h3>
+  <span>UI/UX Design Lead</span>
+</a>
+      </div>
+      
+      
+
+      <div class="half">
+        
+<a href="https://www.behance.net/gallery/193063751/Shipment-Trackers-Inc-Landing-Page-Redesign" target="_blank" class="item-wrapper" rel="noreferrer">
+  <div class="image-holder">
+    <img src="/assets/Projects/Shipment Trackers Redesign Cover.png" alt="Landing Page for Shipment Trackers" />
+  </div>
+  
+  <h3>Shipment Trackers Inc.</h3>
+  <span>Landing Page Redesign</span>
+</a>
+      </div>
+      
+      
+
+      <div class="half">
+        
+<a href="https://dribbble.com/shots/23882983-Headphones-Wallpaper" target="_blank" class="item-wrapper" rel="noreferrer">
+  <div class="image-holder">
+    <img src="/assets/Projects/Headphone Wallpaper.png" alt="Headphones Wallpaper" />
+  </div>
+  
+  <h3>Headphones Wallpaper</h3>
+  <span>Illustrator Design Basics</span>
+</a>
+      </div>
+      
+      
+
+      <div class="half">
+        
+        
+    <div class="soon">
+      <span></span>
+    </div>
+  </div>
+</section>
+
+<section id="balls" class="fade-in"></section>
+
+    
+     <section class="contact">
+  <div class="narrow">
+    <h2 class="reveal-text">Have an idea?<br>Let’s <a href="mailto:pro.josan@gmail.com?Subject=I%20want%20an%20awesome%20design">get in touch</a> and build something awesome!</h2>
+  </div>
+</section>
+
+<section class="footer fade-in">
+  <div class="wide">
+    <span>Built with <i class="fa-solid fa-mug-hot"></i></span>
+    <span>Still a work in progress</span>
+  </div>
+</section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+
+
+
+// HEADER SCROLL THINGY
+let scrollpos = window.scrollY
+const header = document.querySelector(".site-header")
+const header_height = header.offsetHeight
+const add_class_on_scroll = () => header.classList.add("is-scrolled")
+const remove_class_on_scroll = () => header.classList.remove("is-scrolled")
+
+window.addEventListener('scroll', function() { 
+  scrollpos = window.scrollY;
+  if (scrollpos >= header_height) { add_class_on_scroll() }
+  else { remove_class_on_scroll() }
+})
+
+// BALLS
+const colors = ["#feaa2b", "#8dc63f", "#00a8ee", "#ef2e9d"];
+
+const numBalls = 20;
+const balls = [];
+
+for (let i = 0; i < numBalls; i++) {
+    let ball = document.createElement("div");
+    ball.classList.add("ball");
+    ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+    ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+    ball.style.top = `${Math.floor(Math.random() * 60)}vh`;
+    ball.style.transform = `scale(${Math.random()})`;
+  
+    var randompx = Math.floor(Math.random() * (14 - 6 + 1)) + 6;
+  
+    ball.style.width = `${randompx}px`;
+    ball.style.height = ball.style.width;
+  
+    balls.push(ball);
+    document.getElementById("balls").append(ball);
+}
+
+// BALLS KEYFRAMES
+balls.forEach((el, i, ra) => {
+    let to = {
+      x: Math.random() * (i % 2 === 0 ? -11 : 11),
+    y : Math.random() * 12
+    };
+
+  let anim = el.animate(
+    [
+      { transform: "translate(0, 0)" },
+      { transform: `translate(${to.x}rem, ${to.y}rem)` }
+    ],
+    {
+      duration: (Math.random() + 1) * 2000, // random duration
+      direction: "alternate",
+      fill: "both",
+      iterations: Infinity,
+      easing: "ease-in-out"
+    }
+  );
+});
+});
+    </script>
+  </body>
+</html>
+
 </body>
 </html>
